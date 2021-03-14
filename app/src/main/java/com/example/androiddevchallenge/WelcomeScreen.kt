@@ -41,12 +41,15 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.androiddevchallenge.ui.theme.MyTheme
+import dev.chrisbanes.accompanist.insets.navigationBarsPadding
 
 @Composable
 fun WelcomeScreen(
     navigateToLogin: () -> Unit
 ) {
-    Box {
+    Box(
+        modifier = Modifier.navigationBarsPadding()
+    ) {
         Image(
             modifier = Modifier.fillMaxSize(),
             painter = painterResource(id = R.drawable.welcome_bg),

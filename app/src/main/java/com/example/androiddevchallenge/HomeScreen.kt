@@ -59,11 +59,13 @@ import com.example.androiddevchallenge.ui.theme.MyTheme
 import com.example.androiddevchallenge.ui.theme.green
 import com.example.androiddevchallenge.ui.theme.red
 import com.example.androiddevchallenge.ui.theme.white
+import dev.chrisbanes.accompanist.insets.navigationBarsPadding
 
 @OptIn(ExperimentalMaterialApi::class)
 @Composable
 fun HomeScreen() {
     BottomSheetScaffold(
+        modifier = Modifier.navigationBarsPadding(),
         sheetContent = { PositionsSheet() },
         content = { HomeContent() },
         sheetShape = RoundedCornerShape(0.dp),
