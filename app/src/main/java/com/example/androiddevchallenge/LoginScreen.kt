@@ -43,6 +43,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.androiddevchallenge.ui.theme.MyTheme
+import com.example.androiddevchallenge.ui.theme.WeTradeButtonElevation
 import com.example.androiddevchallenge.ui.theme.gray900
 import com.example.androiddevchallenge.ui.theme.white
 
@@ -140,6 +141,7 @@ fun LoginScreen(
                     .fillMaxWidth()
                     .height(48.dp),
                 onClick = { navigateToHome() },
+                elevation = WeTradeButtonElevation(),
                 shape = MaterialTheme.shapes.large
             ) {
                 Text(text = "LOG IN")

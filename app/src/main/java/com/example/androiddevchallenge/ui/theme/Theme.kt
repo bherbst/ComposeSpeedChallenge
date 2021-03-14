@@ -16,6 +16,7 @@
 package com.example.androiddevchallenge.ui.theme
 
 import androidx.compose.foundation.isSystemInDarkTheme
+import androidx.compose.material.ButtonDefaults
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.darkColors
 import androidx.compose.material.lightColors
@@ -43,7 +44,12 @@ private val LightColorPalette = lightColors(
 val custom1 = green
 val custom2 = red
 
-val buttonElevation = 0.dp
+@Composable
+fun WeTradeButtonElevation() = ButtonDefaults.elevation(
+    0.dp,
+    0.dp,
+    0.dp
+)
 
 @Composable
 fun MyTheme(darkTheme: Boolean = isSystemInDarkTheme(), content: @Composable() () -> Unit) {

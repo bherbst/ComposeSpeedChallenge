@@ -56,6 +56,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.androiddevchallenge.ui.theme.MyTheme
+import com.example.androiddevchallenge.ui.theme.WeTradeButtonElevation
 import com.example.androiddevchallenge.ui.theme.green
 import com.example.androiddevchallenge.ui.theme.red
 import com.example.androiddevchallenge.ui.theme.white
@@ -135,6 +136,7 @@ fun HomeContent() {
                 .fillMaxWidth()
                 .height(48.dp),
             onClick = { /* TODO */ },
+            elevation = WeTradeButtonElevation(),
             shape = MaterialTheme.shapes.large
         ) {
             Text(text = "TRANSACT")

@@ -41,6 +41,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.androiddevchallenge.ui.theme.MyTheme
+import com.example.androiddevchallenge.ui.theme.WeTradeButtonElevation
 import dev.chrisbanes.accompanist.insets.navigationBarsPadding
 
 @Composable
@@ -84,6 +85,7 @@ fun WelcomeScreen(
                     modifier = Modifier.fillMaxSize()
                         .weight(1f),
                     onClick = { /*TODO*/ },
+                    elevation = WeTradeButtonElevation(),
                     shape = MaterialTheme.shapes.large
                 ) {
                     Text(text = "GET STARTED")
